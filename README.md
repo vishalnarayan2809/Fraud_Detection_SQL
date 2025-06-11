@@ -3,11 +3,9 @@
 A comprehensive fraud detection system that analyzes credit card transactions using SQL, PostgreSQL, Python, and data visualization techniques.
 
 
-##ERD
-
 
 ## 🗂️ Project Structure
-![Fraud_detection](https://github.com/user-attachments/assets/a4f100ec-03e7-4202-bf3d-5f7eb2cd29cd)
+
 
 ```
 fraud-detection/
@@ -52,6 +50,10 @@ fraud-detection/
 ├── .gitignore                      # Git ignore rules
 └── docker-compose.yml              # Docker setup for PostgreSQL
 ```
+
+##ERD
+![Fraud_detection](https://github.com/user-attachments/assets/a4f100ec-03e7-4202-bf3d-5f7eb2cd29cd)
+
 
 ## 🚀 Quick Start
 

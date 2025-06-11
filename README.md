@@ -51,7 +51,7 @@ fraud-detection/
 └── docker-compose.yml              # Docker setup for PostgreSQL
 ```
 
-##ERD
+ERD
 ![Fraud_detection](https://github.com/user-attachments/assets/a4f100ec-03e7-4202-bf3d-5f7eb2cd29cd)
 
 

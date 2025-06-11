@@ -1,0 +1,21 @@
+# Database Configuration for Fraud Detection System
+
+database:
+  host: localhost
+  port: 5432
+  database: fraud_detection
+  user: postgres
+  password: ${DB_PASSWORD}  # Use environment variable for security
+  
+connection_pool:
+  min_connections: 1
+  max_connections: 10
+  
+settings:
+  echo: false  # Set to true for SQL debugging
+  isolation_level: READ_COMMITTED
+  
+backup:
+  enabled: true
+  location: "./backups/"
+  retention_days: 30

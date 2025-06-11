@@ -1,0 +1,51 @@
+# Fraud Detection Rules Configuration
+
+fraud_rules:
+  
+  # Early morning transaction rules
+  early_morning:
+    start_hour: 7
+    end_hour: 9
+    min_amount_threshold: 50.0
+    max_amount_threshold: 2000.0
+    
+  # Small transaction rules (card testing)
+  small_transactions:
+    amount_threshold: 2.00
+    max_count_per_card: 5
+    time_window_hours: 24
+    
+  # Statistical outlier detection
+  outliers:
+    z_score_threshold: 3.0
+    iqr_multiplier: 1.5
+    min_sample_size: 100
+    
+  # Velocity rules (rapid transactions)
+  velocity:
+    max_transactions_per_minute: 3
+    max_transactions_per_hour: 20
+    time_window_minutes: 5
+    
+  # Risk scoring weights
+  risk_weights:
+    small_transaction_count: 0.3
+    outlier_score: 0.4
+    velocity_score: 0.2
+    temporal_anomaly: 0.1
+    
+  # Alert thresholds
+  alerts:
+    low_risk_threshold: 0.3
+    medium_risk_threshold: 0.6
+    high_risk_threshold: 0.8
+    critical_risk_threshold: 0.9
+    
+  # Merchant vulnerability rules
+  merchant_rules:
+    min_small_transactions: 10
+    min_unique_cards_affected: 3
+    vulnerability_categories:
+      - restaurant
+      - coffee shop
+      - bar
